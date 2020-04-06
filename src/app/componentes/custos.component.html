@@ -21,8 +21,8 @@
         </thead>
         <tr *ngFor="let i of custos">
             <td>{{ i.origem }}</td>
-            <td>{{ i.categoria }}</td>
-            <td>{{ i.mes_lancamento }}</td>
+            <td>{{ categorias[i.categoria] }}</td>
+            <td>{{ meses[i.mes_lancamento.toString()] }}</td>
             <td>{{ i.valor | currency}}</td>
         </tr>
       </table>
